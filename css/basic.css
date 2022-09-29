@@ -32,13 +32,37 @@ body {
 
 /* Header */
 header {
+  padding: 0px 24px;
   height: 96px;
   background-color: #C4C4C4;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
   display: grid;
   grid-template-columns: 128px 1fr;
   column-gap: 24px;
   grid-template-rows: 96px;
   align-items: center;
+  justify-items: right;
+  z-index: 10;
+
+}
+
+header img {
+
+  margin-bottom: 18px;
+}
+
+header li {
+  display: inline;
+  min-width: 84px;
+  padding: 12px;
+}
+
+header li:hover {
+  border-radius: 4px;
+  color: white;
+  background-color: orange;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 
@@ -47,16 +71,19 @@ header {
 }
 
 article {
-  height: calc(100% - 144px);
-  padding: 12px 18px;
+
+  padding: 12px 64px;
   display: grid;
   grid-template-columns: 200px 1fr;
   column-gap: 48px;
   align-items: center;
+  min-height: 75%;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 article>div {
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
   display: flex;
   width: 200px;
   height: 200px;
@@ -87,20 +114,59 @@ article br {
 
 footer {
   height: 48px;
+  align-items: center;
   background: rgba(104, 138, 110, 0.72);
   box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 2;
 }
 
 
-.parallax {
+.parallax_ {
   /* The image used */
   background-image: url("../images/parallax.jpg");
   /* Set a specific height */
   min-height: 500px;
-
+  transform: translateY(var(--translateY));
+  will-change: transform;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#flower {
+  position: fixed !important;
+  opacity: 0.7;
+  height: 100px;
+  right: 64px;
+  bottom: 40px;
+  transition: height 1s;
+
+}
+
+#flower:hover {
+  opacity: 1;
+  height: 120px;
+}
+
+.medium {
+  font-size: 2rem;
+}
+
+.large {
+  font-size: 3rem;
+}
+
+.blockquote {
+
+  color: rgba(104, 138, 110, 0.72);
+  border-top: 2px solid rgba(104, 138, 110, 0.72);
+  border-bottom: 2px solid rgba(104, 138, 110, 0.72);
+  text-align: justify;
+}
+
+.blockquote>p {
+  color: black;
+  font-size: 1.5rem;
 }
