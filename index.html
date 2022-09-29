@@ -11,188 +11,58 @@
         <title>εἰσακοή</title>
         <link rel="stylesheet" href="/css/basic.css" />
         <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
-        <script src="/js/moment-with-locales.min.js"></script>
+        <script src="index.js"></script>
     </head>
-    <style>
-        article.span {
-            line-height: 24px;
-        }
-
-        p {
-            text-align: justify;
-            line-height: 24px;
-        }
-
-    </style>
-    <script>
-        moment.locale("el");
-        const NewRome = moment([330, 05, 11]);
-        const EllEpan = moment([1821, 03, 25]);
-        const EOKA = moment([1955, 04, 01]);
-        var now = moment();
-
-        function yearsFrom(theDate) {
-            return now.diff(theDate, "years");
-        }
-
-        // document.getElementById("today").innerHTML =
-        //     moment().format("Do MMMM YYYY") +
-        //     " μετά Χριστόν";
-
-        // document.getElementById("timeFromNewRome").innerHTML =
-        //     "• " +
-        //     yearsFrom(NewRome) +
-        //     " έτη από την ίδρυση της Κωνσταντινούπολης - Νέας Ρώμης.";
-        // document.getElementById("timeFrom1821").innerHTML =
-        //     "• " +
-        //     yearsFrom(EllEpan) +
-        //     " έτη από την έναρξη της ελληνικής επανάστασης.";
-        // document.getElementById("timeFromEOKA").innerHTML =
-        //     "• " +
-        //     yearsFrom(EOKA) +
-        //     " έτη από την έναρξη του εθνικοαπελευθερωτικού αγώνα της ΕΟΚΑ.";
-
-        // resize timer to prevent animations firing during resize
-
-        let resizeTimer;
-        window.addEventListener("resize", () => {
-            document.body.classList.add("resize-animation-stopper");
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(() => {
-                document.body.classList.remove("resize-animation-stopper");
-            }, 1000);
-        });
-
-
-
-    </script>
-
 
     <body>
-        <div class="top-wrapper">
-            <div class="top-bar">
-                <h1 class="logo-text">εἰσακοή</h1>
-                <p></p>
-
-                <nav role="navigation">
-                    <div id="menuToggle">
-                        <!--
-                      A fake / hidden checkbox is used as click reciever,
-                      so you can use the :checked selector on it.
-                      -->
-                        <input type="checkbox" />
-
-                        <!--
-                      Some spans to act as a hamburger.
-                      
-                      They are acting like a real hamburger,
-                      not that McDonalds stuff.
-                      -->
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
-                        <!--
-                      Too bad the menu has to be inside of the button
-                      but hey, it's pure CSS magic.
-                      -->
-                        <ul id="menu">
-                            <a href="#" class="active-link">
-                                <li>αρχική</li>
-                            </a>
-                            <a href="#">
-                                <li>tomatis</li>
-                            </a>
-                            <a href="#">
-                                <li>nlp</li>
-                            </a>
-                            <a href="#">
-                                <li>ενδιαφέρουν</li>
-                            </a>
-                            <a href="#">
-                                <li>επικοινωνία</li>
-                            </a>
-                        </ul>
-                    </div>
-                </nav>
-
-
-            </div>
-            <div class="divider"></div>
-            <div class="trademarks">
-                <p>Διεθνείς Πιστοποιήσεις</p>
-                <div id="tomatis"></div>
-                <div id="nlp"></div>
-
-            </div>
-        </div>
-        </div>
-        <div class="rest">
-
-
+        <header>
+            <img id="logo" src="./images/logo.png">
+            <nav>
+                <ul>
+                    <li>αρχική</li>
+                    <li>tomatis</li>
+                    <li>nlp</li>
+                    <li>σύνδεσμοι</li>
+                </ul>
+            </nav>
+        </header>
+        <div id="main" class="parallax">
             <article>
-                <h1 class="article-title">
-                    Καλωσορίσατε!
-                </h1>
-                <p>
-                    Η εντατική ακρόαση ενός προσώπου που αφηγείται τις σκέψεις ή τα συναισθήματά του, αποτελεί την πρώτη
-                    και βασικότερη προϋπόθεση για μια βαθιά και ουσιαστική επικοινωνία με τον άλλον.
-                <p>
-                    Η ακρόαση αποτελεί μια ικανότητα που μας προσανατολίζει και συνδέει εν γένει, με τον περιβάλλοντα
-                    κόσμο. Στην πραγματικότητα η ακρόαση δεν έχει να κάνει απλώς με το αισθητήριο όργανο της ακοής – το
-                    αυτί –
-                    αλλά αποτελεί μια σύνθετη ικανότητα η οποία απαιτεί συνδυασμό πολλών ψυχοσωματικών ικανοτήτων του
-                    ανθρώπου.
-                </p>
-                <p>Απαιτεί συγκέντρωση, διάρκεια προσοχής, γρήγορη επεξεργασία των ήχων και του λόγου, κατανόηση, μνήμη,
-                    συναισθηματική σταθερότητα κ.ά. Η ακρόαση διαφέρει από την ακοή όπως διαφέρουν οι αγγλικοί όροι
-                    "listen" και "hear".</p>
-                </p>
-
-                <div class="blockquote-wrapper">
-                    <div class="blockquote">
-                        <h1 id="">
-                            Η ακρόαση είναι για την ακόη, ότι η στόχευση για την όραση.
-                        </h1>
-                        <h2 id="lezanta">&mdash;ιατρός Άλφρεντ Τοματίς</h2>
-                    </div>
-                </div>
-                <p>Στην <span class="inline-eisakoi">εἰσακοή</span> δεν ασχολούμαστε με βλάβες ή παθήσεις της ακοής, για
-                    την θεραπεία των οποίων υπεύθυνοι είναι οι ιατροί ΩΡΛ, αλλά με προβλήματα στην λειτουργία της
-                    ακρόασης.
-                    Κάποτε η ικανότητα αυτή υποβαθμίζεται, για λόγους οι οποίοι οφείλονται σε ψυχοσωματικούς παράγοντες
-                    όπως – άγχος, κόπωση, θλίψη, έλλειψη νοήματος, μειωμένη προσοχή κ.α.
-                    Μιας και λοιπόν αυτοί είναι ψυχοσωματικοί, μπορούν άρα και να θεραπευτούν σε μεγάλο βαθμό.
-                    Το ευτύχημα είναι ότι βελτιώνοντας την ικανότητα της ακρόασης σταθεροποιούμε τον ψυχισμό μας και
-                    ανάποδα! Επιπλέον η αποτελεσματική ακρόαση μας επιτρέπει να αποκτήσουμε ευκολότερα ικανότητα
-                    αποτελεσματικής έκφρασης,είτε αυτή αφορά ομιλία, απαγγελία, η τραγούδι και εν γένει τις μουσικές μας
-                    ικανότητες.
-                </p>
-
-                <p>Προκειμένου να πετύχουμε τα πιο πάνω χρησιμοποιούμε στην <span class="inline-eisakoi">εἰσακοή</span>
-                    την μέθοδο <em>TOMATIS</em> υποστηριζόμενη από εργαλεία και μεθόδους του <em>ΝΓΠ (Nευρο
-                        Γλωσσολογικός Προγραμματισμός)</em>.</p>
-
-                <div class="blockquote-wrapper">
-                    <div class="blockquote">
-                        <h1 id="">
-                            Το ασυνείδητό σου εργάζεται χωρίς εσύ να το γνωρίζεις και αυτός είναι ο τρόπος τον οποίο
-                            προτιμά.
-                        </h1>
-                        <h2 id="lezanta">&mdash;Μίλτον Έρικσον</h2>
-                    </div>
-                </div>
-                <p>Αν λοιπόν θα θέλατε να δοκιμάσετε κάτι καινοτόμο και αποτελεσματικό
-                    προκειμένου βοηθήσετε τον εσωτερικό σας εαυτό να βρει την λύση σε προβλήματα σχετικά με
-                    τον συναισθηματικό σας κόσμο ή την έκφραση ή την μουσική αντίληψη ή την φώνηση, επικοινωνήστε μαζί
-                    μας.</p>
-
-                <p>Καλή πλοήγηση στον ιστότοπό μας!</p>
-
+                <div><img src="./images/index/bench-conversation.png" alt=""></div>
+                <aside>
+                    <h1>Καλωσορίσατε</h1>
+                    <p>Ο ιστότοπός μας είναι αφιερωμένος στην ανάπτυξη των συναισθηματικών, γνωστικών και κινητικών
+                        ικανοτήτων μας, μέσα από
+                        την μουσική και την γλώσσα.<br>
+                        Στην εἰσακοή χρησιμοποιούμε την μέθοδο <em>TOMATIS</em>, σε πλαισιωμένη με εργαλεία του
+                        <em>ΝΓΠ</em>
+                        (Νευρογλωσσικός Προγραμματισμός -
+                        NLP), στοχεύοντας κυρίως στο να βελτιώσουμε τις λειτουργίες ακρόασης και φώνησης.<br>
+                        Ο βρόγχος ακρόασης - επεξεργασίας - φώνησης αποτελεί μια πολύπλοκη ψυχοσωματική λειτουργία, η
+                        οποία εμπλέκει τα όργανα
+                        της ακοής, το νευρικό σύστημα και τα όργανα της φώνησης.<br>
+                        Εστιάζοντας λοιπόν τις προβληματικές περιοχές αυτού του βρόγχου, μπορούμε όχι μόνο να τις
+                        διορθώσουμε, αλλά ταυτόχρονα
+                        να φωτίσουμε περιοχές του εσωτερικού μας κόσμου που ίσως χρειάζονται ιδιαίτερη φροντίδα - κάποτε
+                        από άλλον ειδικό
+                        θεραπευτή στον τομέα αυτό.
+                        Καλή περιήγηση!
+                    </p>
+                </aside>
             </article>
+            <article>
+                <div><img src="./images/index/Alfred.png" alt=""></div>
+                <aside>
+                    <div class="blockquote">
+
+                    </div>
+                </aside>
+            </article>
+
         </div>
-
-
+        <footer>
+            <h4>Διεθνείς Πιστοποιήσεις</h4>
+        </footer>
     </body>
 
 
