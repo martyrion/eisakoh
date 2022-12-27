@@ -1,0 +1,123 @@
+/* body.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+} */
+
+/* Header */
+header {
+  padding: 0px 24px;
+  top: 0px;
+  height: 128px;
+  align-items: center;
+  justify-items: end;
+  grid-template-columns: 200px 1fr;
+  background-image: linear-gradient(hsl(188 68% 25%), hsl(188, 56%, 36%));
+  border-bottom-left-radius: 80% 20%;
+  /* border-bottom-right-radius: 70% 33%; */
+  z-index: 10;
+}
+
+header>img {
+  margin-bottom: 36px;
+  margin-right: 64px;
+}
+
+header li {
+  min-width: 64px;
+  padding: 12px;
+  margin-bottom: 24px;
+}
+
+header li:hover {
+  border-radius: 4px;
+  background-color: hsl(var(--clr-accent) / 0.75);
+  cursor: pointer;
+}
+
+li a {
+  /* text-decoration: none; */
+  color: inherit;
+}
+
+header .active-link {
+  border-radius: 4px;
+  background-color: hsl(var(--clr-white) / 0.33);
+  cursor: auto;
+}
+
+.flag {
+  margin-top: 22px;
+  margin-left: 12px;
+  padding: 2px;
+  opacity: 0.6;
+  border: 2px solid hsl(var(--clr-white) / 0);
+}
+
+.flag:hover,
+.flag.active-flag {
+  opacity: 1;
+  border: 2px solid hsl(var(--clr-white) / 0.7);
+  border-radius: 24px;
+}
+
+article:first-of-type {
+  margin-top: 128px !important;
+}
+
+article {
+  padding: 12px 36px;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+article>div {
+  /* margin-top: 3.5rem; */
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-image: url('/images/circle-stroke-accent.png');
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+
+article>div>img {
+  margin: 0 auto;
+}
+
+article h1 {
+  margin-bottom: 18px;
+}
+
+article br {
+  margin-bottom: 24px;
+}
+
+footer {
+  height: 64px;
+  bottom: 0px;
+  align-items: center;
+  grid-template-columns: 12px 48px 48px 76px 1fr;
+  background-image: linear-gradient(hsl(188 68% 25%), hsl(188, 56%, 36%));
+  /* border-top-left-radius: 70% 10%; */
+  border-top-right-radius: 100% 50%;
+  z-index: 10;
+
+}
+
+footer img:first-child {
+  margin-left: 24px;
+}
+
+footer h4 {
+  margin-top: 6px;
+}
+
+
+.blockquote {
+  border-top: 2px solid hsl(var(--clr-dark));
+  border-bottom: 2px solid hsl(var(--clr-dark));
+  padding: 12px 0px;
+}
