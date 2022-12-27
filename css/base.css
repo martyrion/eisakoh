@@ -7,7 +7,11 @@
 @font-face {
     font-family: 'GFSNeohellenic';
     src: url("../fonts/neohellenic/GFSNeohellenic-Regular.ttf");
+}
 
+@font-face {
+    font-family: 'Gabriola-local';
+    src: url("../fonts/Gabriola.ttf");
 }
 
 /* ------------------- */
@@ -34,7 +38,7 @@
 
     /* font-families */
     --ff-serif: "GFSNeohellenic";
-    --ff-quote: "Gabriola";
+    --ff-quote: "Gabriola-local";
     --ff-sans-cond: "Barlow Condensed", sans-serif;
     --ff-sans-normal: "Barlow", sans-serif;
     --ff-calligraphy: "Cavafy";
@@ -53,7 +57,7 @@
 
 .grid {
     display: grid;
-    gap: var(--gap, 1rem);
+    gap: var(--gap, 3rem);
 }
 
 .flow>*+* .container {
