@@ -37,7 +37,7 @@
 			"05": {
 				"type": "article-blockquote",
 				"image": "./images/Erotokritos_and_Arethousa.png",
-				"heading": "\" Of all that is good in a man, <br></br> words have grace <br></br> to make every heart take comfort; <br></br> and he who possesses to speak with knowledge and manner,<br></br> makes the eyes of men both weep and laugh.\"",
+				"heading": "\" Of all that is good in a man, words have grace, to make every heart take comfort; and he who possesses to speak with knowledge and manner, makes the eyes of men both weep and laugh.\"",
 				"body": "—Vincenzo Cornaro \"Erotokritos\""
 			},
 			"06": {
@@ -71,31 +71,31 @@
 		},
 		"links": {
 			"01": {
-				"type": "article-main",
+				"type": "link",
 				"image": "./images/reading.png",
 				"heading": "Books",
 				"body": "<li><a href='https://www.parga.com.cy/el/katigories-vivliwn/-viktor-e-frankl-vintage-man-s-search-for-meaning-102085#sthash.aa5T3ZqO.dpbs'>Man's search for meaning, by Dr. Victor Frankl</a></li> "
 			},
 			"02": {
-				"type": "article-main",
+				"type": "link",
 				"image": "./images/tv.png",
 				"heading": "Movies",
 				"body": "<li><a href='https://en.wikipedia.org/wiki/Schindler%27s_List/'>Schindler's list - when knowing how to communicate saves lives!</a><li> "
 			},
 			"03": {
-				"type": "article-main",
+				"type": "link",
 				"image": "./images/violonist.png",
 				"heading": "Music",
 				"body": "<li><a href='https://www.youtube.com/watch?v=Tz3JLUeNwzg&t=557s'>Supplicatory canon to St. Paisios of Mt. Athos</a></li><li><a href='https: //www.youtube.com/watch?v=CDdvReNKKuk'>\"Amazing Grace\" - one of the best versions!</a></li>  "
 			},
 			"04": {
-				"type": "article-main",
+				"type": "link",
 				"image": "./images/nlp-small.png",
 				"heading": "NLP",
 				"body": "<li><a href='http://www.nlpu.com/NLPU.html'>NLP Univercity</a></li><li><a href='https://nlpincrete.gr'>NLP in Crete</a></li>  "
 			},
 			"05": {
-				"type": "article-main",
+				"type": "link",
 				"image": "",
 				"heading": "Language",
 				"body": "<li><a href='http://www.akwn.net'>Akropolis News - news in ancient greek</a></li>"
@@ -107,6 +107,9 @@
 				"image": "./images/mail.png",
 				"heading": "Contact us",
 				"body": "Leave as a message at: <br></br><li class='fs-700 text-dark'>info@εισακοη.ελ</li><br></br> We will be very happy to arrange a voice or video call, to discuss the details of what we can do for you. It usually won't take more than a few hours to reply. <br></br>The communication is - of course - free of charge."
+			},
+			"02": {
+				"type": "form"
 			}
 		}
 	},
@@ -148,7 +151,7 @@
 			"05": {
 				"type": "article-blockquote",
 				"image": "./images/Erotokritos_and_Arethousa.png",
-				"heading": "\" Aπ' ό,τι κάλλη έχει άνθρωπος,<br>τα λόγια έχουν τη χάρη<br>να κάμουσιν κάθε καρδιάν παρηγοριά να πάρει·<br>κι οπού κατέχει να μιλεί με γνώσιν και με τρόπον,<br>κάνει και κλαίσιν και γελούν τα μάτια των ανθρώπων.\"",
+				"heading": "\" Aπ' ό,τι κάλλη έχει άνθρωπος, τα λόγια έχουν τη χάρη, να κάμουσιν κάθε καρδιάν παρηγοριά να πάρει·κι οπού κατέχει να μιλεί με γνώσιν και με τρόπον,κάνει και κλαίσιν και γελούν τα μάτια των ανθρώπων.\"",
 				"body": "— Βιντζέντου Κορνάρου “Ερωτόκριτος”"
 			},
 			"06": {

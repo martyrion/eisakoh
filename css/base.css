@@ -20,11 +20,12 @@
 
 :root {
     /* colors */
-    --clr-darker: 205 100% 7%;
-    --clr-dark: 188 68% 25%;
-    --clr-light: 35 100% 91%;
+    --clr-darker: 93 17% 10%;
+    --clr-dark: 188 60% 31%;
+    --clr-light: 55 14% 81%;
     --clr-white: 0 0% 100%;
-    --clr-accent: 29 100% 50%;
+    --clr-accent: 28 61% 48%;
+
 
     /* font-sizes */
     --fs-900: 9.375rem;
@@ -94,6 +95,10 @@
     background-color: hsl(var(--clr-dark));
 }
 
+.bg-light {
+    background-color: hsl(var(--clr-light) / 0.5);
+}
+
 .bg-white {
     background-color: hsl(var(--clr-white));
 }
@@ -102,8 +107,12 @@
     color: hsl(var(--clr-dark));
 }
 
-.text-accent {
+.text-light {
     color: hsl(var(--clr-light));
+}
+
+.text-accent {
+    color: hsl(var(--clr-accent));
 }
 
 .text-white {
@@ -209,6 +218,22 @@
 .fs-700,
 .fs-600 {
     line-height: 1.1;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-500 {
+    font-weight: 500;
 }
 
 .numbered-title {

@@ -12,25 +12,34 @@
         <link rel="stylesheet" href="/css/resets.css">
         <link rel="stylesheet" href="/css/base.css" />
         <link rel="stylesheet" href="/css/index.css" />
+        <link rel="stylesheet" href="/css/hamburger.css">
         <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
         <script src="index.js" type="module"></script>
     </head>
 
-    <body class="bg-white ff-serif">
+    <body class="bg-light ff-serif">
         <header class="sticky grid bg-dark box-shadow-down text-white">
             <img id="logo" src="./images/logo.png" class="color-invert">
             <div class="flex">
-                <nav>
-                    <ul class="flex">
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-btn" for="menu-toggle">
+                    <span></span>
+                </label>
+                <nav class="hamburger-menu">
+                    <ul class="menu-box flex text-center">
                         <li id="index" class="active-link menu-item"></li>
                         <li id="tomatis" class="menu-item"></a></li>
                         <li id="nlp" class="menu-item"></a></li>
                         <li id="links" class="menu-item"></a></li>
                         <li id="contact" class="menu-item"></a></li>
+                        <li class="flag-li"><img src="images/greece.png" alt="" srcset="" id="el"
+                                class="flag active-flag"></li>
+                        <li class="flag-li"><img src="images/united-kingdom.png" alt="" srcset="" id="en" class="flag">
+                        </li>
                     </ul>
                 </nav>
-                <div><img src="images/greece.png" alt="" srcset="" id="el" class="flag active-flag"></div>
-                <div><img src="images/united-kingdom.png" alt="" srcset="" id="en" class="flag"></div>
+
+
             </div>
         </header>
         <div id="main">
@@ -38,17 +47,19 @@
         <footer class="sticky grid bg-dark box-shadow-up text-white">
             <img src="images/nlp.png" alt="" srcset="" class="color-white">
             <img src="images/tomatis.png" alt="" srcset="" class="color-white">
-            <h4 id="footer-certifications" class="menu-item">Διεθνείς Πιστοποιήσεις: NLP Practitioner & Master
+            <h4 id="footer-certifications" class="menu-item fw-600">Διεθνείς Πιστοποιήσεις: NLP Practitioner & Master
                 Practitioner, Tomatis Level 1 & 2</h4>
         </footer>
 
     </body>
 
+    <!-- Templates area  -->
+
     <template id="article-main">
         <article class="grid article-main">
             <div><img src="" alt=""></div>
             <aside>
-                <h1 class="fs-700 text-center"></h1>
+                <h1 class="fs-700 fw-900 text-center"></h1>
                 <p class="fs-500 text-soft text-justify"></p>
             </aside>
         </article>
@@ -59,11 +70,32 @@
             <div><img src="" alt=""></div>
             <aside>
                 <div class="blockquote">
-                    <div class="fs-700 text-justify text-dark ff-quote"></div>
-                    <p class="fs-600 text-right"></p>
+                    <div class="fs-700 text-center text-dark ff-quote"></div>
+                    <p class="fs-600 fw-500 text-right text-accent"></p>
                     </p>
                 </div>
             </aside>
+        </article>
+    </template>
+
+    <template id="link">
+        <article class="grid article-main">
+            <div><img src="" alt=""></div>
+            <aside>
+                <h1 class="fs-700 fw-900 text-center"></h1>
+                <p class="fs-500 text-soft text-center"></p>
+            </aside>
+        </article>
+    </template>
+
+    <template id="form">
+        <article class="flex">
+            <form class="fs-500" action="mailto:info@εισακοη.ελ" method="post" enctype="text/plain">
+                Name:<br><input class="text-dark" type="text" name="name"> <br>
+                Message:<br><input class="text-dark" type="text" name="message"><br>
+                Email:<br><input class="text-dark" type="text" name="email"><br>
+                <input class="text-white box-shadow-down" type="submit" value="Send">
+            </form>
         </article>
     </template>
 

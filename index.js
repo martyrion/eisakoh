@@ -10,6 +10,7 @@ var content_text;
 const main_container = document.getElementById('main'); // main
 const menu_and_footer_elements = [...document.querySelectorAll('.menu-item')]; // menu and footer
 const flags = [...document.querySelectorAll('.flag')] // flags
+const hamburger = document.getElementById('menu-toggle');
 
 // Get languages-and-content from JSON file
 async function get_text(jsonFile) {
@@ -48,7 +49,8 @@ function select_language(that) {
     remove_active_flags() // remove active
     that.classList.add('active-flag') // assign active class to element
     active_language = that.id; // assign language to variable
-    build_language_content()
+    build_language_content();
+    hamburger.checked = false;
 }
 
 // Build content according to language and page selections/variables
@@ -77,7 +79,7 @@ function build_language_content() {
         if (template) {
             let element = template.content.cloneNode(true);
 
-            if (type == 'article-main') {
+            if (type == 'article-main' || type == 'link') {
                 let img = element.querySelector('img');
                 let h1 = element.querySelector('h1');
                 let p = element.querySelector('p');
@@ -93,12 +95,17 @@ function build_language_content() {
                 img.src = object.image;
                 div.innerHTML = object.heading;
                 p.innerHTML = object.body;
+            }
+
+            if (type == 'form') {
 
             }
 
             main_container.appendChild(element);
         }
     }
+
+    hamburger.checked = false;
 }
 
 build_language_content();
