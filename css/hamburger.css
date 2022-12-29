@@ -23,13 +23,18 @@
 }
 
 #menu-toggle:checked~nav>ul {
-    position: fixed;
-    top: 20px;
-    right: 10vw;
-    width: 85vw;
-    background-color: hsl(93 17% 10% / 0.833);
+    position: absolute;
+    top: 96px;
+    left: 5vw;
+    width: 88vw;
+    border-radius: 4px;
+    background-color: hsl(93 17% 10% / 0.966);
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
+    border-top-right-radius: 80% 10%;
+    border-bottom-left-radius: 80% 10%;
+    padding: 36px 0px;
     display: inline-block !important;
+    z-index: -100;
 }
 
 #menu-toggle:checked~nav>ul>li {

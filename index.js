@@ -86,6 +86,12 @@ function build_language_content() {
                 img.src = object.image;
                 h1.innerHTML = object.heading;
                 p.innerHTML = object.body;
+
+                // Add special class to index page, 1st content
+                if (active_page == 'index' && content == '01') {
+                    h1.classList.remove('fs-700');
+                    h1.classList.add('fs-750');
+                }
             }
 
             if (type == 'article-blockquote') {
