@@ -30,7 +30,8 @@ header ul {
 
 header li {
   min-width: 64px;
-  padding: 10px;
+  padding: 10px 10px 6px 10px;
+
   margin-bottom: 24px;
 }
 
@@ -185,7 +186,7 @@ footer img {
 }
 
 footer h4 {
-  margin-top: 6px;
+  margin: 0px 36px 0px 48px;
 }
 
 .blockquote {
@@ -205,9 +206,6 @@ footer h4 {
     padding-left: 3vw !important;
     padding-right: 2vw !important;
   }
-
-
-
 
 
 }
@@ -235,6 +233,14 @@ footer h4 {
   header,
   footer {
     padding: 0 3vw;
+  }
+
+  header {
+    height: 96px;
+  }
+
+  header .menu-btn {
+    top: 42px;
   }
 
   article {
@@ -271,8 +277,19 @@ footer h4 {
   }
 
   footer {
-    display: flex;
+    display: flex !important;
 
+  }
+
+  footer img {
+    display: none;
+
+  }
+
+  footer h4 {
+    margin-top: 12px;
+    margin-right: 12px;
+    text-align: center;
   }
 
 }

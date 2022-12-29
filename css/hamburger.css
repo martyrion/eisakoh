@@ -27,7 +27,8 @@
     top: 20px;
     right: 10vw;
     width: 85vw;
-    background-color: grey;
+    background-color: hsl(93 17% 10% / 0.833);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
     display: inline-block !important;
 }
 

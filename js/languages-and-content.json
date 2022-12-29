@@ -105,8 +105,8 @@
 			"01": {
 				"type": "article-main",
 				"image": "./images/mail.png",
-				"heading": "Contact us",
-				"body": "Leave as a message at: <br></br><li class='fs-700 text-dark'>info@εισακοη.ελ</li><br></br> We will be very happy to arrange a voice or video call, to discuss the details of what we can do for you. It usually won't take more than a few hours to reply. <br></br>The communication is - of course - free of charge."
+				"heading": "Contact us at: <br> <li class='fs-700 text-dark'>info@εισακοη.ελ</li>",
+				"body": " We will be very happy to arrange a voice or video call, to discuss the details of what we can do for you. It usually won't take more than a few hours to reply. <br></br>The communication is - of course - free of charge."
 			},
 			"02": {
 				"type": "form"
