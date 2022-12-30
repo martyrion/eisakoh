@@ -85,6 +85,26 @@
 				"image": "./images/grinder-bandler.png",
 				"heading": "Origins",
 				"body": "NLP was originated by John Grinder (whose background was in linguistics) and Richard Bandler (whose background was in mathematics and gestalt therapy) for the purpose of making explicit models of human excellence. <br><br>Their first work The Structure of Magic Vol. I & II (1975, 1976) identified the verbal and behavioral patterns of therapists <em>Fritz Perls</em> (the creator of gestalt therapy) and <em>Virginia Satir</em> (internationally renowned family therapist). <br><br>Their next work Patterns of the Hypnotic Techniques of <em>Milton H. Erickson</em>, M.D. Vol. I & II (1975, 1976) examined the verbal and behavioral patterns of Milton Erickson, founder of the American Society of Clinical Hypnosis and one of the most widely acknowledged and clinically successful psychiatrists of our times. "
+			},
+			"05": {
+				"type": "article-video",
+				"image": "./images/Virginia.png",
+				"heading": "Virginia Satir",
+				"body": "Virginia Satir (26 June 1916 – 10 September 1988) was an American author and psychotherapist, recognized for her approach to family therapy.<br><br> Her pioneering work in the field of family reconstruction therapy honored her with the title[1] \"Mother of Family Therapy\".<br><br> Her most well-known books are Conjoint Family Therapy, 1964, Peoplemaking, 1972, and The New Peoplemaking, 1988.",
+				"video":"./videos/Virginia Satir Communication and Congruence.mp4"
+			},
+			"06": {
+				"type": "article-main",
+				"image": "./images/Perls.png",
+				"heading": "Fritz Perls",
+				"body": "Friedrich Salomon Perls (July 8, 1893 – March 14, 1970), better known as Fritz Perls, was a German-born psychiatrist, psychoanalyst and psychotherapist. <br><br> Perls coined the term \"Gestalt therapy\" to identify the form of psychotherapy that he developed with his wife, Laura Perls, in the 1940s and 1950s. <br><br>The core of the Gestalt therapy process is enhanced awareness of sensation, perception, bodily feelings, emotion, and behavior, in the present moment. Relationship is emphasized, along with contact between the self, its environment, and the other."
+			},
+			"07": {
+				"type": "article-video",
+				"image": "./images/Milton.png",
+				"heading": "Milton Erickson",
+				"body": "",
+				"video":"./videos/Milton Erickson.mp4"
 			}
 		},
 		"links": {
@@ -114,7 +134,7 @@
 			},
 			"05": {
 				"type": "link",
-				"image": "",
+				"image": "./images/language.png",
 				"heading": "Language",
 				"body": "<li><a href='http://www.akwn.net'>Akropolis News - news in ancient greek</a></li>"
 			}

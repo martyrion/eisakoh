@@ -1,4 +1,4 @@
-@font-face {
+ /* @font-face {
     font-family: 'Cavafy';
     src: url("/fonts/cavafy/CavafyScriptTT.eot");
     src: url("/fonts/cavafy/CavafyScriptTT.woff") format("woff");
@@ -7,12 +7,12 @@
 @font-face {
     font-family: 'GFSNeohellenic';
     src: url("../fonts/neohellenic/GFSNeohellenic-Regular.ttf");
-}
+} */
 
 @font-face {
     font-family: 'Gabriola-local';
     src: url("../fonts/Gabriola.ttf");
-}
+} 
 
 /* ------------------- */
 /* Custom properties   */
@@ -39,7 +39,7 @@
     --fs-200: 0.875rem;
 
     /* font-families */
-    --ff-serif: "GFSNeohellenic";
+    --ff-serif: 'GFS Neohellenic', sans-serif;;
     --ff-quote: "Gabriola-local";
     --ff-sans-cond: "Barlow Condensed", sans-serif;
     --ff-sans-normal: "Barlow", sans-serif;
