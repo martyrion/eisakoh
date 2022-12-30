@@ -13,7 +13,7 @@
 			"01": {
 				"type": "article-main",
 				"image": "./images/bench-conversation.png",
-				"heading": "Welcome",
+				"heading": "Welcome!",
 				"body": "Our website is dedicated to the development of our emotional, cognitive and motor skills, through music and language. <br></br> At <em>εισακοή</em> we use the TOMATIS method, supported by NLP (Neuro-Linguistic Programming) tools, aiming mainly to improve listening and speaking functions.<br></br></br>The aural-vocal loop is a complex, higher psychosomatic function, which involves the hearing organs, the nervous system and the vocal organs.<br></br></br> So by focusing on the problem areas of this loop, we can not only correct them, but at the same time illuminate areas of our inner world that may need special care - sometimes from another specialist in the corresponding field. Have a good tour!"
 			},
 			"02": {
@@ -64,9 +64,27 @@
 		"nlp": {
 			"01": {
 				"type": "article-main",
-				"image": "./images/bench-conversation.png",
-				"heading": "Hi!",
-				"body": "Ho!"
+				"image": "./images/nlp-cubes.png",
+				"heading": "What NLP stands for?",
+				"body": "NLP stands for Neuro-Linguistic Programming, a name that encompasses the three most influential components involved in producing human experience: neurology, language and programming. <br><br>The neurological system regulates how our bodies function, language determines how we interface and communicate with other people and our programming determines the kinds of models of the world we create. <br><br>Neuro-Linguistic Programming describes the fundamental dynamics between mind (neuro) and language (linguistic) and how their interplay affects our body and behavior (programming). "
+			},
+			"02": {
+				"type": "article-main",
+				"image": "./images/what-is-nlp.png",
+				"heading": "What is NLP?",
+				"body": "NLP is a pragmatic school of thought - an 'epistemology' - that addresses the many levels involved in being human. <br><br>NLP is a multi-dimensional process that involves the development of behavioral competence and flexibility, but also involves strategic thinking and an understanding of the mental and cognitive processes behind behavior. <br><br>NLP provides tools and skills for the development of states of individual excellence, but it also establishes a system of empowering beliefs and presuppositions about what human beings are, what communication is and what the process of change is all about. <br><br>At another level, NLP is about self-discovery, exploring identity and mission. It also provides a framework for understanding and relating to the 'spiritual' part of human experience that reaches beyond us as individuals to our family, community and global systems. NLP is not only about competence and excellence, it is about wisdom and vision."
+			},
+			"03": {
+				"type": "article-main",
+				"image": "./images/map-vs-territory.png",
+				"heading": "Fundamendal presuppositions",
+				"body": "In essence, all of NLP is founded on two fundamental presuppositions: <br><br><p class='fw-900 text-center'>1</p>The Map is Not the Territory. As human beings, we can never know reality. We can only know our perceptions of reality. We experience and respond to the world around us primarily through our sensory representational systems. It is our 'neuro-linguistic' maps of reality that determine how we behave and that give those behaviors meaning, not reality itself. It is generally not reality that limits us or empowers us, but rather our map of reality.<br><br><p class='fw-900 text-center'>2</p> Life and 'Mind' are Systemic Processes. The processes that take place within a human being and between human beings and their environment are systemic. Our bodies, our societies, and our universe form an ecology of complex systems and sub-systems all of which interact with and mutually influence each other. It is not possible to completely isolate any part of the system from the rest of the system. Such systems are based on certain 'self-organizing' principles and naturally seek optimal states of balance or homeostasis.  "
+			},
+			"04": {
+				"type": "article-main",
+				"image": "./images/grinder-bandler.png",
+				"heading": "Origins",
+				"body": "NLP was originated by John Grinder (whose background was in linguistics) and Richard Bandler (whose background was in mathematics and gestalt therapy) for the purpose of making explicit models of human excellence. <br><br>Their first work The Structure of Magic Vol. I & II (1975, 1976) identified the verbal and behavioral patterns of therapists <em>Fritz Perls</em> (the creator of gestalt therapy) and <em>Virginia Satir</em> (internationally renowned family therapist). <br><br>Their next work Patterns of the Hypnotic Techniques of <em>Milton H. Erickson</em>, M.D. Vol. I & II (1975, 1976) examined the verbal and behavioral patterns of Milton Erickson, founder of the American Society of Clinical Hypnosis and one of the most widely acknowledged and clinically successful psychiatrists of our times. "
 			}
 		},
 		"links": {
@@ -105,7 +123,7 @@
 			"01": {
 				"type": "article-main",
 				"image": "./images/mail.png",
-				"heading": "Contact us at: <br> <li class='fs-700 text-dark'>info@εισακοη.ελ</li>",
+				"heading": "Contact us at: <br> <li class='fs-600 text-dark'>info@εισακοη.ελ</li>",
 				"body": " We will be very happy to arrange a voice or video call, to discuss the details of what we can do for you. It usually won't take more than a few hours to reply. <br></br>The communication is - of course - free of charge."
 			},
 			"02": {
@@ -127,7 +145,7 @@
 			"01": {
 				"type": "article-main",
 				"image": "./images/bench-conversation.png",
-				"heading": "Καλωσορίσατε",
+				"heading": "Καλωσορίσατε!",
 				"body": "Ο ιστότοπός μας είναι αφιερωμένος στην ανάπτυξη των συναισθηματικών, γνωστικών και κινητικών ικανοτήτων μας, μέσα από την μουσική και την γλώσσα.<br></br> Στην εἰσακοή χρησιμοποιούμε την μέθοδο TOMATIS, σε πλαισιωμένη με εργαλεία του ΝΓΠ (Νευρογλωσσικός Προγραμματισμός - NLP), στοχεύοντας κυρίως στο να βελτιώσουμε τις λειτουργίες ακρόασης και φώνησης.<br></br>Ο βρόγχος ακρόασης - επεξεργασίας - φώνησης αποτελεί μια πολύπλοκη ψυχοσωματική λειτουργία, η οποία εμπλέκει τα όργανα της ακοής, το νευρικό σύστημα και τα όργανα της φώνησης.<br></br>Εστιάζοντας λοιπόν τις προβληματικές περιοχές αυτού του βρόγχου, μπορούμε όχι μόνο να τις διορθώσουμε, αλλά ταυτόχρονα να φωτίσουμε περιοχές του εσωτερικού μας κόσμου που ίσως χρειάζονται ιδιαίτερη φροντίδα - κάποτε από άλλον ειδικό θεραπευτή στον τομέα αυτό. Καλή περιήγηση! "
 			},
 			"02": {

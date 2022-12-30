@@ -91,6 +91,9 @@ function build_language_content() {
                 if (active_page == 'index' && content == '01') {
                     h1.classList.remove('fs-700');
                     h1.classList.add('fs-750');
+
+                    active_language == 'el' ? h1.classList.add('welcome-greek') : null
+
                 }
             }
 

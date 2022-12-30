@@ -69,12 +69,12 @@ header .active-link {
 }
 
 .flag {
-  margin-top: -2px;
+  margin-top: -6px;
   opacity: 0.6;
   padding: 0px;
   border: 2px solid hsl(var(--clr-white) / 0);
-  height: 28px;
-  width: 28px;
+  height: 32px;
+  width: 32px;
 }
 
 .flag-li {
@@ -119,6 +119,7 @@ article>div {
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
+
 }
 
 /* article>div:hover {
@@ -128,6 +129,7 @@ article>div {
 
 article>div>img {
   margin: 0 auto;
+
 }
 
 article h1 {
@@ -149,7 +151,7 @@ article>form {
 }
 
 form>input {
-  min-width: 400px;
+  min-width: 320px;
   border-radius: 6px;
   outline: none;
   padding-left: 6px;
@@ -160,7 +162,8 @@ form>input:nth-child(5) {
 }
 
 form>input:last-child {
-  max-width: 224px;
+  min-width: 320px;
+  max-width: 384px;
   margin: 12px 0;
   background-color: hsl(var(--clr-dark) / 0.75);
   border: none;
@@ -200,6 +203,14 @@ footer h4 {
   line-height: 1em;
 }
 
+em {
+  font-weight: 700;
+}
+
+/* ================================ */
+/* RESPONSIVE DESIGNT - BREAKPOINTS */
+/* ================================ */
+
 @media only screen and (max-width: 1024px) {
   #main {
     padding: 0;
@@ -210,7 +221,6 @@ footer h4 {
     padding-left: 3vw !important;
     padding-right: 2vw !important;
   }
-
 
 }
 
@@ -231,11 +241,15 @@ footer h4 {
   }
 
   article {
-    padding: 3vw;
+    padding: 2vw;
+  }
+
+  .welcome-greek {
+    font-size: 3rem;
   }
 
   /* welcome text */
-  article h1.fs-750 {
+  article h1.fs-700 {
     padding-top: 0px;
   }
 
@@ -296,9 +310,36 @@ footer h4 {
   }
 
   footer h4 {
-    margin-top: 12px;
-    margin-right: 12px;
+    margin: 12px 12px 0px 0px;
     text-align: center;
+  }
+
+}
+
+
+@media screen and (orientation:landscape) and (min-device-width: 319px) {
+
+
+  /* CSS code for output in landscape mode */
+
+  header {
+    height: 64px;
+    align-items: flex-start;
+    padding-top: 4px;
+  }
+
+  header li {
+    margin: 0;
+    padding: 0px 10px 0px 10px;
+  }
+
+  footer {
+    height: 48px;
+  }
+
+  footer img {
+    width: 28px;
+    height: 28px;
   }
 
 }

@@ -10,10 +10,16 @@
         <meta http-equiv="expires" content="0" />
         <title>εἰσακοή</title>
         <link rel="stylesheet" href="/css/resets.css?v=1.0">
-        <link rel="stylesheet" href="/css/base.css?v=1.0" />
+        <link rel="stylesheet" href="/css/base.css?v=1.1" />
         <link rel="stylesheet" href="/css/index.css?v=1.0" />
         <link rel="stylesheet" href="/css/hamburger.css?v=1.0">
-        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="./images/favicons/site.webmanifest">
+
         <script src="index.js?v=1.0" type="module"></script>
     </head>
 
@@ -53,8 +59,9 @@
 
     </body>
 
-    <!-- Templates area  -->
-
+    <!-- =============== -->
+    <!-- HTML Templates area  -->
+    <!-- =============== -->
     <template id="article-main">
         <article class="grid article-main">
             <div><img src="" alt=""></div>
@@ -96,6 +103,16 @@
                 Email:<br><input class="text-dark" type="text" name="email"><br>
                 <input class="text-white box-shadow-down" type="submit" value="Send">
             </form>
+        </article>
+    </template>
+
+    <template id="article-video">
+        <article class="grid article-main">
+            <div><img src="" alt=""></div>
+            <aside>
+                <h1 class="fs-700 fw-900 text-center"></h1>
+                <p class="fs-500 text-soft text-justify"></p>
+            </aside>
         </article>
     </template>
 

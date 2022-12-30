@@ -39,9 +39,15 @@
 
 #menu-toggle:checked~nav>ul>li {
     display: flex;
+    height: 48px;
+    align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 6px auto;
     font-size: x-large;
+}
+
+#menu-toggle:checked~nav>ul>li>img {
+    margin-top: 0px;
 }
 
 #menu-toggle {
