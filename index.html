@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="/css/resets.css?v=1.0">
     <link rel="stylesheet" href="/css/base.css?v=1.2" />
     <link rel="stylesheet" href="/css/index.css?v=1.2" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:wght@400;700&display=swap" rel="stylesheet">
+
+
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
@@ -53,7 +63,7 @@
         <img src="images/nlp.png" alt="" srcset="" class="color-white">
         <img src="images/tomatis.png" alt="" srcset="" class="color-white">
         </span>
-        <h4 id="footer-certifications" class="menu-item fw-500">Διεθνείς Πιστοποιήσεις: NLP Practitioner & Master
+        <h4 id="footer-certifications" class="fw-500">Διεθνείς Πιστοποιήσεις: NLP Practitioner & Master
             Practitioner, Tomatis Level 1 & 2</h4>
     </footer>
 
@@ -74,7 +84,7 @@
 
 <template id="article-blockquote">
     <article class="article-blockquote flex">
-        <div><img src="" alt=""></div>
+        <div class="flex"><img src="" alt=""></div>
         <aside>
             <div class="blockquote">
                 <div class="fs-700 text-center text-dark ff-quote"></div>
@@ -107,11 +117,12 @@
 </template>
 
 <template id="article-video">
-    <article class="article-main">
-        <div><img src="" alt=""></div>
-        <aside>
+    <article class="article-main flex">
+        <div class="flex"><img src="" alt=""></div>
+        <aside class="flex">
             <h1 class="fs-700 fw-900 text-center"></h1>
             <p class="fs-500 text-soft text-justify"></p>
+            <video controls> <source src="" type="video/mp4"></video>
         </aside>
     </article>
 </template>

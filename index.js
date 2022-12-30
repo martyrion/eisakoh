@@ -110,6 +110,18 @@ function build_language_content() {
 
             }
 
+            
+            if (type == 'article-video') {
+                let img = element.querySelector('img');
+                let h1 = element.querySelector('h1');
+                let p = element.querySelector('p');
+                let v = element.querySelector('source');
+                img.src = object.image;
+                h1.innerHTML = object.heading;
+                p.innerHTML = object.body;
+                v.src = object.video;
+            }
+
             main_container.appendChild(element);
         }
     }
