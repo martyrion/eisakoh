@@ -29,8 +29,6 @@ picture {
     margin-inline-end: 0;
 }
 
-
-
 h1,
 h2,
 h3,
@@ -74,3 +72,9 @@ I disabled because I only have one animation - the hamburger menu / FKIARAS
         scroll-behavior: auto !important;
     }
 } */
+
+/* stop animations on resize - requires JS also */
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+  }
