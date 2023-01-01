@@ -87,10 +87,8 @@ li {
 }
 
 li a {
-  text-decoration: underline overline;
-  text-decoration-style: wavy;
   text-decoration-color: hsl(var(--clr-accent) / 0.5);
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 3px;
   color: inherit;
   line-height: 32px;
 }
@@ -151,6 +149,10 @@ article:last-child {
   margin-bottom: 72px;
 }
 
+article p li {
+  list-style-type: disc;
+}
+
 .welcome-greek {
   font-size: 3rem;
 }
@@ -197,6 +199,7 @@ footer {
   justify-content: space-between;
   background-image: linear-gradient(hsl(188 68% 25%), hsl(188, 56%, 36%));
   border-top-right-radius: 100% 50%;
+  font-size: var(--fs-200);
   z-index: 10;
 }
 
@@ -206,6 +209,7 @@ footer img {
 }
 
 em {
+  font-style: normal;
   font-weight: 700;
 }
 
@@ -217,6 +221,8 @@ em {
   .welcome-greek {
     font-size: 4.25rem;
   }
+
+
 }
 
 @media only screen and (min-height: 600px) {
