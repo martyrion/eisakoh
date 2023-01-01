@@ -5,8 +5,8 @@ header {
 }
 
 #header-container {
-  padding: 0 5vw 2vw 5vw;
-  height: 96px;
+  padding: 0 5vw 2vh 5vw;
+  height: 15vh;
   width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -18,39 +18,44 @@ header {
 #logo {
   margin-top: -18px;
   min-width: 144px;
+  cursor: pointer;
 }
 
 header nav {
-  display: none;
-}
-
-header nav {
-  display: block;
+  display: flex;
   position: fixed;
-  top: -200%;
-  width: 88vw;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  top: -90vmax;
+  /* I am using vmax here to calc by the largest dimension*/
+  width: 90vw;
   border-radius: 4px;
   background-color: hsl(93 17% 10% / 0.966);
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
-  border-top-right-radius: 80% 10%;
+  /* border-top-right-radius: 80% 10%; */
   border-bottom-left-radius: 80% 10%;
-  padding: 36px 0px;
   z-index: -10;
-  transition-duration: .5s;
+  transition: top .5s ease-in-out;
 }
 
 header nav ul {
-  display: block !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  padding: 0 36px;
+  padding: 3vh 0 !important;
+  text-align: center;
   user-select: none;
 }
 
-header .menu-item {
-  min-width: 64px;
+.menu-item {
+  align-items: center;
+  justify-content: center;
+  max-width: 70vw;
+  min-width: 60vw;
   border-radius: 4px;
-  padding: 10px 6px;
-  transition-duration: .5s;
 }
 
 .menu-item:hover {
@@ -58,16 +63,15 @@ header .menu-item {
   cursor: pointer;
 }
 
-header .active-link {
+.active-link {
   background-color: hsl(var(--clr-white) / 0.33);
 }
 
 .flag {
-  margin-top: 6px;
   opacity: 0.6;
   border: 2px solid hsl(var(--clr-white) / 0);
-  height: 28px;
-  min-width: 28px !important;
+  height: 36px;
+  min-width: 36px !important;
 }
 
 .flag:hover,
@@ -89,7 +93,6 @@ li a {
   text-decoration-thickness: 2px;
   color: inherit;
   line-height: 32px;
-
 }
 
 li a:hover {
@@ -105,7 +108,7 @@ article:first-of-type {
 }
 
 article {
-  padding: 3vw 5vw;
+  padding: 3vw 5vw 3vw 5vw;
   flex-direction: column;
   margin: 2rem 0;
   justify-content: center;
@@ -121,7 +124,7 @@ article>div {
   background-image: url('/images/circle-stroke-accent.png');
 }
 
-article>div>img{
+article>div>img {
   margin: 0 auto;
 }
 
@@ -181,10 +184,15 @@ form>input:last-child:hover {
   background-color: hsl(var(--clr-dark));
 }
 
+video {
+  max-width: 100%;
+}
+
 footer {
-  height: 64px;
+  display: none !important;
+  height: min(8vh, 11vh);
   bottom: 0px;
-  padding: 10px 5vw 0 5vw;
+  padding: 10px 12% 0 5vw;
   align-items: center;
   justify-content: space-between;
   background-image: linear-gradient(hsl(188 68% 25%), hsl(188, 56%, 36%));
@@ -205,18 +213,19 @@ em {
 /* RESPONSIVE DESIGNT - BREAKPOINTS */
 /* ================================ */
 
-@media only screen and (min-height: 600px) {
+@media only screen and (min-width: 480px) {
+  .welcome-greek {
+    font-size: 4.25rem;
+  }
+}
 
-  header {
-    height: 128px;
+@media only screen and (min-height: 600px) {
+  footer {
+    display: flex !important;
   }
 }
 
 @media only screen and (min-width: 800px) {
-
-  header nav {
-    display: flex;
-  }
 
   #menu-toggle,
   .menu-btn {
@@ -226,7 +235,6 @@ em {
   header nav {
     position: static;
     display: flex !important;
-    width: 100%;
     border-radius: 0;
     background-color: rgba(190, 16, 16, 0);
     box-shadow: none;
@@ -238,29 +246,41 @@ em {
 
   header nav ul {
     display: flex !important;
+    flex-direction: row;
     justify-content: flex-end;
     gap: 1rem;
     width: 100%;
-    padding: 0;
     user-select: none;
+  }
+
+  .menu-item {
+    max-width: auto;
+    min-width: 64px;
+    padding: 4px 8px 8px 8px;
+    font-size: var(--fs-400);
   }
 }
 
 @media only screen and (min-width: 1024px) {
-
   article {
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
+    padding: 5vh 9vw 5vh 5vw;
   }
 
+  article>div {
+    margin-right: 24px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
+  #header-container {
+    padding: 0 16vw 2vh 16vw;
+  }
 
-  #header-container,
   footer,
   article {
-    padding: 3vw 16vw;
+    padding: 3vh 18vw 3vh 16vw;
     /* increase column gap? how? */
   }
 }
@@ -268,7 +288,6 @@ em {
 /* ========================= */
 /*       HAMBURGER MENU      */
 /* ========================= */
-
 #menu-toggle {
   opacity: 0;
 }
@@ -293,12 +312,13 @@ em {
 }
 
 #menu-toggle:checked~nav {
-  top: 124px !important;
+  top: 11vh !important;
 }
 
 #menu-toggle:checked~nav>ul>li {
   display: flex;
-  height: 48px;
+  max-height: 7vh;
+  min-height: 5vh;
   align-items: center;
   justify-content: center;
   margin: 6px auto;
@@ -331,7 +351,6 @@ em {
   width: 100%;
   height: 3px;
   background-color: #fefefe;
-  transition-duration: .25s;
 }
 
 .menu-btn>span::before {
