@@ -33,7 +33,6 @@ header nav {
   border-radius: 4px;
   background-color: hsl(93 17% 10% / 0.966);
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
-  /* border-top-right-radius: 80% 10%; */
   border-bottom-left-radius: 80% 10%;
   z-index: -10;
   transition: top .5s ease-in-out;
@@ -55,6 +54,7 @@ header nav ul {
   justify-content: center;
   max-width: 70vw;
   min-width: 60vw;
+  margin: 18px 0px;
   border-radius: 4px;
 }
 
@@ -82,7 +82,7 @@ header nav ul {
   padding: 2px;
 }
 
-li {
+.link li {
   margin: 24px 0px;
 }
 
@@ -323,9 +323,9 @@ em {
   display: flex;
   max-height: 7vh;
   min-height: 5vh;
-  align-items: center;
-  justify-content: center;
-  margin: 6px auto;
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin: 1vh 0;
   font-size: x-large;
 }
 
