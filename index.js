@@ -138,3 +138,9 @@ window.addEventListener("resize", () => {
         document.body.classList.remove("resize-animation-stopper");
     }, 400);
 });
+
+// Visitor counter
+function websiteVisits(response) {
+    console.log(response.value)
+    // document.querySelector("#visits").textContent = response.value;
+}
